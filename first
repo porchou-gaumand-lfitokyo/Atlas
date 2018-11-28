@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+<v><form>
+<fieldset>
+<legend>S'inscrire :</legend>
+Nom<input type="text" name="Username"></br>
+Mot de passe<input type="password" name="pw"></br>
+<input type="submit" value="Login">
+</fieldset>
+</form>
+</v>
+
+<b><h1>Atlas, le robot humanoïde de Boston Dynamics</h1>
+Boston Dynamics est une entreprise américaine, située le Massachusetts et qui est spécialisée dans la robotique. Ses principales réalisations les robots :
+<ul>
+<li> <a href=" https://www.bostondynamics.com/atlas" target='blank'><z>Atlas</z></a></li>
+<li> <a href=" https://www.bostondynamics.com/handle" target='blank'><z>Handle</z></a> </li>
+<li> <a href=" https://www.bostondynamics.com/spot-mini" target='blank'><z>SpotMini</z></a> </li>
+<li> <a href=" https://www.bostondynamics.com/ls3" target='blank'><z>LS3</z></a> </li>
+<li> <a href=" https://www.bostondynamics.com/wildcat" target='blank'><z>WildCat</z></a> </li>
+<li> <a href=" https://www.bostondynamics.com/bigdog" target='blank'><z>BigDog</z></a> </li>
+<li> <a href=" https://www.bostondynamics.com/sandflea" target='blank'><z>SandFlea</z></a> </li>
+</ul>
+
+Atlas est le dernier d'une série de robots humanoïdes avancés que Boston Dynamics développe. Le système de contrôle d'Atlas coordonne les mouvements des bras, du torse et des jambes pour réaliser une manipulation facile du corps entier, élargissant considérablement sa portée et son espace de travail. La capacité d'Atlas à équilibrer tout en effectuant des tâches lui permet de travailler dans un grand volume tout en n'occupant qu'un faible encombrement. <br />
+Le matériel Atlas tire parti de l’impression 3D pour réduire le poids et l’espace, ce qui permet d’obtenir un robot remarquable, avec un rapport résistance / poids élevé et un espace de travail extrêmement grand. La vision stéréo, la détection de distance et d’autres capteurs permettent à Atlas de manipuler des objets dans son environnement et de voyager sur des terrains accidentés. Atlas garde son équilibre lorsqu'il est bousculé ou poussé et peut se relever s'il se renverse. <br />
+Atlas est un des robots humanoides les plus développés au monde <br />
+
+Quelques caractéristiques : <br />
+<table border="10%" cellpadding="15%" cellspacing="10%" width="100%" >
+   <tr>
+      <th>Hauteur</th>
+      <th>Poids</th>
+      <th>Charge utile</th>
+      <th>Actionnement</th>
+      <th>Perception</th>
+      <th>Articulations</th>
+   </tr>
+   <tr>
+      <td>1.50 mètres</td>
+      <td>75 kilogrammes</td>
+      <td>11 kilogrammes</td>
+      <td>Hydraulique</td>
+      <td>LiDAR and Stereo Vision</td>
+      <td>28</td>
+   </tr>
+</table></br>
+<form>
+Est-ce que vous aimez ce site internet?<br>
+<input type="radio" name="pw" value="yes">Oui!
+<input type="radio" name="pw" value="no">Non
+</form>
+</b>
+    
+</body>
+
+</html>
